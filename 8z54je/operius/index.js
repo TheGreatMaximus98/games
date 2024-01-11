@@ -17491,7 +17491,7 @@ const ig = "modulepreload"
 function ag(t) {
     const e = [];
     return ar(async()=>{
-        const {default: n} = await og(()=>import("./tick-worker-9d439ca8.js"), [], import.meta.url)
+        const {default: n} = await og(()=>import("./tick-worker.js"), [], import.meta.url)
           , r = new n;
         e.push(()=>{
             r.terminate()
