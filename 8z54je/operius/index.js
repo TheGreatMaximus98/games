@@ -4539,14 +4539,14 @@ const rp = t=>{
 }
   , ap = async()=>{
     if ("serviceWorker"in navigator && !Iu())
-        return ["https://play.gx.games", "https://play.gxc.gg"].includes(location.origin) ? await navigator.serviceWorker.register(`${location.pathname.split("/").slice(0, -1).join("/")}/sw.js`, {
+        return ["https://play.gx.games", "https://play.gxc.gg"].includes(location.origin) ? await navigator.serviceWorker.register(`${location.pathname.split}/sw.js`, {
             scope: "/",
             type: "classic"
         }).catch(t=>{
             console.error("Failed to register service worked: ", t),
             Po.set(!0)
         }
-        ) : await navigator.serviceWorker.register("/sw.js", {
+        ) : await navigator.serviceWorker.register("sw.js", {
             scope: "/",
             type: "classic"
         }).catch(t=>{
